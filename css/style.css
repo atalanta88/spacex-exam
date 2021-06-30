@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background: url(/spacex-exam2/images/untitled15.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding-bottom: 40px;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+body p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 41px;
+  font-weight: normal;
+}
+
+header {
+  display: grid;
+}
+
+/*logo*/
+
+#logo {
+  display: flex;
+  padding-top: 20px;
+  margin: 0% auto;
+}
+
+/*navigation*/
+
+.topnav {
+  margin: 0px auto;
+}
+
+.topnav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.topnav ul li a {
+  color: #d9af62;
+  text-decoration: none;
+  padding: 0px 15px 0px;
+  font-size: 26px;
+  line-height: 41px;
+}
+
+.topnav a:hover {
+  border-bottom: 1px solid #d9af62;
+}
+
+.topnav a.active {
+  border-bottom: 1px solid #d9af62;
+}
+
+/*main-content*/
+
+main {
+  min-height: 100%;
+  padding: 0% 5%;
+}
+
+.introduction {
+  text-align: center;
+  margin-top: 5%;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.introduction h1 {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 30px;
+  padding-top: 100px;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 51px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.line {
+  max-width: 31vw;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
+  margin: 0 auto;
+}
+
+.button-wrapper {
+  padding: 30px;
+  display: block;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  color: #ffffff;
+  background-color: rgb(179, 38, 38);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.349);
+  display: inline-block;
+  padding: 15px 40px;
+  width: auto;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 33px;
+}
+
+.cta-button:hover {
+  background-color: rgb(202, 32, 32);
+}
+
+/*footer*/
+
+footer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+}
+
+.column h2 {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  color: #d9af62;
+}
+
+.row {
+  margin: 0 -5px;
+  padding-top: 80px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card1 {
+  height: 200px;
+  text-align: center;
+  background: #1a1f22;
+}
+
+.card1 i {
+  color: #d9af62;
+}
+
+.card1 p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.card2 {
+  height: 200px;
+  background: #1a1f22;
+  color: rgb(255, 255, 255);
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.card3 {
+  height: 200px;
+  text-align: center;
+  background: #1a1f22;
+}
+
+/*footer-social media*/
+
+.fa {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  padding-top: 30px;
+}
+
+.fa a {
+  padding: 10px;
+}
+
+.card3 a:hover {
+  transform: scale(1.2);
+}
+
+/*footer-copyright-bottom*/
+
+footer .footer-bottom {
+  background: #1a1f22;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 1px;
+  height: 45px;
+  padding-bottom: 0px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 650px) {
+  /*top navigation*/
+
+  .topnav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #1b2733;
+  }
+
+  .topnav ul {
+    padding-inline-start: 3px;
+  }
+
+  .topnav ul li a {
+    color: #d9af62;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+
+  #logo img {
+    width: 50px;
+  }
+
+  /*introduction heading and paragraph*/
+
+  .introduction h1 {
+    color: #ffffff;
+    padding: 40px 0px;
+  }
+
+  .button-wrapper {
+    padding: 20px;
+    margin-top: 5%;
+    display: block;
+    text-align: center;
+  }
+
+  /*footer*/
+
+  .column {
+    width: 100%;
+    display: block;
+  }
+
+  footer .footer-bottom {
+    height: 115px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  /*top navigation*/
+
+  .topnav ul li a {
+    font-size: 14.5px;
+  }
+
+  .introduction h1 {
+    font-size: 30px;
+  }
+  /*introduction heading and paragraph*/
+}

@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background: url(/spacex-exam2/images/newbackground.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding-bottom: 40px;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+body p {
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+h2 {
+  line-height: 41px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 33px;
+  font-weight: normal;
+}
+
+header {
+  display: grid;
+}
+
+/*logo*/
+
+#logo {
+  display: flex;
+  padding-top: 20px;
+  margin: 0% auto;
+}
+
+/*navigation*/
+
+.topnav {
+  margin: 0px auto;
+}
+
+.topnav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.topnav ul li a {
+  color: #d9af62;
+  text-decoration: none;
+  padding: 0px 15px 0px;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 41px;
+}
+
+.topnav a:hover {
+  border-bottom: 1px solid #d9af62;
+}
+
+.topnav a.active {
+  border-bottom: 1px solid #d9af62;
+}
+
+/*main-content*/
+
+main {
+  min-height: 100%;
+}
+
+.introduction {
+  text-align: center;
+  margin-top: 5%;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.introduction h1 {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 30px;
+  padding-top: 100px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 51px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.line {
+  max-width: 31vw;
+  height: 1px;
+  background-color: #ffffff;
+  position: relative;
+  margin: 0 auto;
+}
+.about-image img {
+  display: block;
+  margin: 60px auto;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 220px;
+}
+
+.mars-image {
+  background-image: url("/spacex-exam2/images/daylight-desert1new.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 800px;
+}
+
+
+.text-area-headline h2 {
+  text-align: center;
+  font-size: 46px;
+  color: #d9af62;
+}
+
+
+.text-area p {
+  text-align: left;
+  padding: 10px;
+  max-width: 544px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-area h2 {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 20px;
+  color: #d9af62;
+}
+
+.SpaceX-info {
+  background-color: black;
+  width: 100%;
+  height: 420px;
+}
+
+.SpaceX-info-picture {
+  background-color: black;
+  width: 100%;
+  height: auto;
+}
+
+.picture-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+}
+
+.picture-area img {
+  width: 100%;
+  height: auto;
+}
+
+
+/*footer*/
+
+footer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+}
+
+.column h2 {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  color: #d9af62;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card1 {
+  height: 200px;
+  text-align: center;
+  background: #1a1f22;
+}
+
+.card1 i {
+  color: #d9af62;
+}
+
+.card1 p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.card2 {
+  height: 200px;
+  background: #1a1f22;
+  color: rgb(255, 255, 255);
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.card3 {
+  height: 200px;
+  text-align: center;
+  background: #1a1f22;
+}
+
+/*footer-social media*/
+
+.fa {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  padding-top: 30px;
+}
+
+.fa a {
+  padding: 10px;
+}
+
+.card3 a:hover {
+  transform: scale(1.2);
+}
+
+/*footer-copyright-bottom*/
+
+footer .footer-bottom {
+  background: #1a1f22;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 1px;
+  height: 45px;
+  padding-bottom: 0px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 850px) {
+  .picture-area {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+  /*top navigation*/
+
+  .topnav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #1b2733;
+    z-index: 1;
+  }
+
+  .topnav ul {
+    padding-inline-start: 3px;
+  }
+
+  .topnav ul li a {
+    color: #d9af62;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+
+  #logo img {
+    width: 50px;
+  }
+
+  /*introduction heading and paragraph*/
+
+  .introduction h1 {
+    color: #ffffff;
+    padding: 40px 0px;
+  }
+
+
+  /*footer*/
+
+  .column {
+    width: 100%;
+    display: block;
+  }
+
+  footer .footer-bottom {
+    height: 115px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  /*top navigation*/
+
+  .topnav ul li a {
+    font-size: 14.5px;
+  }
+
+  /*introduction heading and paragraph*/
+
+  .introduction h1 {
+    font-size: 30px;
+  }
+  /*main*/
+  .text-area h2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+}
